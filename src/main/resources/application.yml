@@ -7,10 +7,8 @@ spring:
     show-sql: true
   application:
     name: product catelog
-  datasource:
-    url: jdbc:h2:mem:testdb
-    username: sa
-    password:
-    driver-class-name: org.h2.Driver
-    jpa:
-      database-platform: org.hibernate.dialect.H2Dialect
+  cache:
+    type: redis
+  redis:
+    host: localhost
+    port: 6379
